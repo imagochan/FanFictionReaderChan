@@ -13,17 +13,17 @@
 // the License.
 package info.piwai.android;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.spicymango.fanfictionreader.BuildConfig;
-
 import android.content.Context;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.TextView;
+
+import com.spicymango.fanfictionreader.BuildConfig;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <p>
