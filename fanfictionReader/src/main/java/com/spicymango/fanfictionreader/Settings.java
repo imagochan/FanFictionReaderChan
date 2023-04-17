@@ -1,12 +1,5 @@
 package com.spicymango.fanfictionreader;
 
-import com.google.firebase.crashlytics.FirebaseCrashlytics;
-import com.spicymango.fanfictionreader.dialogs.backup.BackUpDialog;
-import com.spicymango.fanfictionreader.dialogs.FontDialog;
-import com.spicymango.fanfictionreader.dialogs.backup.RestoreDialog;
-import com.spicymango.fanfictionreader.dialogs.backup.RestoreDialogConfirmation;
-import com.spicymango.fanfictionreader.util.FileHandler;
-
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
@@ -23,12 +16,20 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceManager;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.core.preference.PreferenceFragment;
-import androidx.appcompat.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.preference.PreferenceFragment;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.google.firebase.crashlytics.FirebaseCrashlytics;
+import com.spicymango.fanfictionreader.dialogs.FontDialog;
+import com.spicymango.fanfictionreader.dialogs.backup.BackUpDialog;
+import com.spicymango.fanfictionreader.dialogs.backup.RestoreDialog;
+import com.spicymango.fanfictionreader.dialogs.backup.RestoreDialogConfirmation;
+import com.spicymango.fanfictionreader.util.FileHandler;
 
 import java.util.Locale;
 
