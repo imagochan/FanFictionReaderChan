@@ -38,4 +38,6 @@ captures/
 # Android Studio IntelliJ files
 .idea/
 *.iml
-/java_pid14460.hprof
+
+# hprof files
+*.hprof

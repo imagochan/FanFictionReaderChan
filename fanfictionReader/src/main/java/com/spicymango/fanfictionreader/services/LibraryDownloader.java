@@ -529,7 +529,7 @@ public class LibraryDownloader extends IntentService {
 		builder.setAutoCancel(false);
 
 		// Set an empty Pending Intent on the notification
-		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_UPDATE_CURRENT);
+		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_IMMUTABLE);
 		builder.setContentIntent(pendingIntent);
 
 		// Show or update the notification
@@ -546,7 +546,7 @@ public class LibraryDownloader extends IntentService {
 		builder.setAutoCancel(false);
 
 		// Set an empty Pending Intent on the notification
-		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_UPDATE_CURRENT);
+		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_IMMUTABLE);
 		builder.setContentIntent(pendingIntent);
 
 		// Show or update the notification
@@ -576,7 +576,7 @@ public class LibraryDownloader extends IntentService {
 		builder.setAutoCancel(false);
 
 		// Set an empty Pending Intent on the notification
-		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_UPDATE_CURRENT);
+		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_IMMUTABLE);
 		builder.setContentIntent(pendingIntent);
 
 		// Show or update the notification
@@ -598,7 +598,7 @@ public class LibraryDownloader extends IntentService {
 		builder.setAutoCancel(false);
 
 		// Set an empty Pending Intent on the notification
-		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_UPDATE_CURRENT);
+		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_IMMUTABLE);
 		builder.setContentIntent(pendingIntent);
 
 		// Show or update the notification
@@ -621,7 +621,7 @@ public class LibraryDownloader extends IntentService {
 		builder.setAutoCancel(true);
 
 		// Set an empty intent
-		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_UPDATE_CURRENT);
+		PendingIntent pendingIntent = PendingIntent.getActivity(getApplicationContext(), 0, new Intent(), PendingIntent.FLAG_IMMUTABLE);
 		builder.setContentIntent(pendingIntent);
 
 		// Show or update the notification
@@ -657,7 +657,7 @@ public class LibraryDownloader extends IntentService {
 		final TaskStackBuilder taskBuilder = TaskStackBuilder.create(LibraryDownloader.this);
 		taskBuilder.addNextIntentWithParentStack(i);
 		PendingIntent pendingIntent = taskBuilder.getPendingIntent(0,
-																   PendingIntent.FLAG_UPDATE_CURRENT);
+																   PendingIntent.FLAG_IMMUTABLE);
 		notBuilder.setContentIntent(pendingIntent);
 
 		// Show or update the notification
