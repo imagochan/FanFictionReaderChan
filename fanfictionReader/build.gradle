@@ -24,9 +24,6 @@ android {
         versionCode 99
         versionName "1.63"
     }
-    lintOptions {
-        abortOnError true
-    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -60,8 +57,13 @@ android {
         }
     }
     packagingOptions {
-        exclude 'META-INF/NOTICE.txt'
-        exclude 'META-INF/LICENSE.txt'
+        resources {
+            excludes += ['META-INF/NOTICE.txt', 'META-INF/LICENSE.txt']
+        }
+    }
+    namespace 'com.spicymango.fanfictionreader'
+    lint {
+        abortOnError true
     }
 }
 
